@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sriya Popat - Resume</title>
+    <style>
+        /* General Styles */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #b2c6db; /* Light gray background */
+            color: #5887b6; /* Dark gray text */
+        }
+
+        /* Container holding the navigation and content */
+        #container {
+            display: flex;
+            height: 100%;
+        }
+
+        /* Navigation Bar */
+        #nav {
+            width: 25%;
+            background-color: #344e63; /* Dark background for nav */
+            color: #fff;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        #nav h1 {
+            font-size: 2.2em;
+            margin-bottom: 5px;
+            color: #fff; /* White title */
+            border-bottom: 1px solid #6c757d; /* Lighter border */
+            padding-bottom: 10px;
+        }
+
+        #nav h2 {
+            font-size: 1.2em;
+            color: #adb5bd; /* Light gray subtitle */
+            margin-bottom: 30px;
+        }
+
+        #nav a {
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+            color: #fff; /* White links */
+            border-bottom: 1px solid #6c757d; /* Lighter border for links */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+
+        #nav a:hover {
+            background-color: #495057; /* Darker background on hover */
+            color: #ffc107; /* Yellow color on hover */
+        }
+
+        /* Content Area */
+        #content {
+            width: 75%;
+            padding: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: #fff; /* White background for iframe */
+            border-radius: 8px; /* Rounded corners for iframe */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        /* Styles for content within the iframe (override default tailwind) */
+        .iframe-content {
+            padding: 20px;
+        }
+
+        .iframe-content h1 {
+            font-size: 2em;
+            color: #343a40;
+        }
+
+        .iframe-content h2 {
+            font-size: 1.5em;
+            color: #343a40;
+            border-bottom: 2px solid #343a40;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .iframe-content h3 {
+            font-size: 1.2em;
+            color: #343a40;
+            margin-top: 15px;
+        }
+
+        .iframe-content p {
+            color: #6c757d;
+            line-height: 1.6;
+        }
+
+        .iframe-content a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .iframe-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <nav id="nav">
+        <h1>Sriya Popat</h1>
+        <h2>ICT Engineering Student</h2>
+        <a href="home.html" target="contentFrame">Home</a>
+        <a href="education.html" target="contentFrame">Education</a>
+        <a href="projects.html" target="contentFrame">Projects</a>
+        <a href="experience.html" target="contentFrame">Experience</a>
+        <a href="skills.html" target="contentFrame">Skills</a>
+        <a href="certifications.html" target="contentFrame">Certifications</a>
+        <a href="activities.html" target="contentFrame">Co-Curricular Activities</a>
+    </nav>
+    
+    <div id="content">
+        <iframe name="contentFrame" src="home.html"></iframe>
+    </div>
+</div>
+
+<script>
+    // Home Page Content
+    const homeContent = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #343a40;
+      }
+      .container {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2.5em;
+        color: #343a40;
+        margin-bottom: 10px;
+      }
+      p {
+        color: #6c757d;
+        line-height: 1.6;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sriya Popat</h1>
+        <p>
+            Gandhinagar, Gujarat | <a href="mailto:popatsriya@gmail.com">popatsriya@gmail.com</a> | 72030-11161 | <a href="https://www.linkedin.com/in/SriyaPopat">LinkedIn</a> | <a href="https://github.com/sriyapopat">GitHub</a>
+        </p>
+        <p>
+            I am a pre-final year ICT engineering student at PDEU, passionate about IoT, electronics, and cloud computing. I’ve worked on projects like Senso-Gown, an IoT-based healthcare system, and contribute as a CDC student coordinator and Geeks for Geeks core member. With experience in embedded systems and cloud platforms. I also explore art, podcasting, and social initiatives, blending technology, creativity, and impact.<br>
+
+
+            Welcome to my online resume! Please use the navigation on the left to explore my qualifications and experiences.
+        </p>
+    </div>
+</body>
+</html>
+    `;
+
+    // Education Page Content
+    const educationContent = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #343a40;
+      }
+      .container {
+        padding: 20px;
+      }
+      h2 {
+        font-size: 2em;
+        color: #343a40;
+        border-bottom: 2px solid #343a40;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+      h3 {
+        font-size: 1.5em;
+        color: #343a40;
+        margin-top: 15px;
+      }
+      p {
+        color: #6c757d;
+        line-height: 1.6;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Education</h2>
+        <h3>Pandit Deendayal Energy University</h3>
+        <p>B.Tech in Information and Communications Technology</p>
+        <p>Sept 2022 – Present</p>
+        <p>GPA: 7.57/10.0</p>
+        <p>Coursework: Signal Processing, RF engineering, Web Technology, Embedded Systems, Data Structure and Algorithms</p>
+    </div>
+</body>
+</html>
+    `;
+
+    // Projects Page Content
+    const projectsContent = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #343a40;
+      }
+      .container {
+        padding: 20px;
+      }
+      h2 {
+        font-size: 2em;
+        color: #343a40;
+        border-bottom: 2px solid #343a40;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+      h3 {
+        font-size: 1.5em;
+        color: #343a40;
+        margin-top: 15px;
+      }
+      p {
+        color: #6c757d;
+        line-height: 1.6;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Projects</h2>
+        <h3>Senso Gown Project (IoT-based Healthcare Monitoring System)</h3>
+        <p>Participated in a group project presented at a hackathon to develop Senso-Gown, an IoT solution for real-time health monitoring.</p>
+        <p>Automated patient vitals tracking (temperature, pulse, oxygen levels) using sensors (DS18B20, DHT11, Max30102) and an ESP8266 microcontroller for wireless communication.</p>
+        <p>Tools Used: Arduino IDE (C++), PHP, SQL, Twilio, Hostinger</p>
+
+        <h3>CPU Design Project (Building a 16-bit CPU using Logisim)</h3>
+        <p>Specialized in designing and connecting registers to the control unit, contributing to the development of the control processing unit.</p>
+        <p>Engaged in problem-solving and implementation of complex digital logic circuits, including Logic Unit, Control Unit, Counters, Common Bus, Encoders</p>
+        <p>Designing and connecting registers to the control unit, contributing to the development of the control processing unit</p>
+
+        <h3>Audio Amplification Using LM386</h3>
+        <p>Project focused on understanding the working principles of the LM386 audio amplifier.</p>
+        <p>Explored components and analyzed performance metrics to enhance audio signal amplification in small systems.</p>
+
+        <h3>Design of a Compact ACS-Fed Dual Band Antenna for Bluetooth/WLAN and WiMAX Applications</h3>
+        <p>Project To design and simulate a compact dual-band antenna using Ansys HFSS.</p>
+        <p>Introduced modifications such as changes to the substrate, ground plane, and the addition of a U-shaped slot, significantly improving the antenna’s versatility for various wireless technologies.</p>
+    </div>
+</body>
+</html>
+    `;
+
+    // Experience Page Content
+    const experienceContent = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #343a40;
+      }
+      .container {
+        padding: 20px;
+      }
+      h2 {
+        font-size: 2em;
+        color: #343a40;
+        border-bottom: 2px solid #343a40;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+      h3 {
+        font-size: 1.5em;
+        color: #343a40;
+        margin-top: 15px;
+      }
+      p {
+        color: #6c757d;
+        line-height: 1.6;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Experience</h2>
+        <h3>A Civic and Social Service Internship</h3>
+        <p>NEO NGO</p>
+        <p>Rajkot, Gujarat</p>
+        <p>Summer 2023</p>
+        <p>Analyzed Mindspark data to identify top-performing grade 8 students in municipal schools</p>
+        <p>Aimed to inspire academic excellence, reduce dropout rates, and provide scholarship support for further</p>
+        <p>Utilized Excel for data collection, organization, and creating student records.</p>
+    </div>
+</body>
+</html>
+    `;
+
+    // Skills Page Content
+    const skillsContent = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #343a40;
+      }
+      .container {
+        padding: 20px;
+      }
+      h2 {
+        font-size: 2em;
+        color: #343a40;
+        border-bottom: 2px solid #343a40;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+      h3 {
+        font-size: 1.5em;
+        color: #343a40;
+        margin-top: 15px;
+      }
+      p {
+        color: #6c757d;
+        line-height: 1.6;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Skills</h2>
+        <h3>Languages</h3>
+        <p>C++, C, Python, SQL, JavaScript, CSS, HTML</p>
+        <h3>Tools and Technologies</h3>
+        <p>Git/GitHub, VS code, Jupyter Notebook, MATLAB, MYSQL, Arduino IDE, AWS cloud computing</p>
+        <h3>Simulation Tools</h3>
+        <p>Logisim, Multisim, Ansys, Proteus</p>
+    </div>
+</body>
+</html>
+    `;
+
+    // Certifications Page Content
+    const certificationsContent = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #343a40;
+      }
+      .container {
+        padding: 20px;
+      }
+      h2 {
+        font-size: 2em;
+        color: #343a40;
+        border-bottom: 2px solid #343a40;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+      h3 {
+        font-size: 1.5em;
+        color: #343a40;
+        margin-top: 15px;
+      }
+      p {
+        color: #6c757d;
+        line-height: 1.6;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Certifications</h2>
+        <h3>STTP on Applications of AI/ML in Biomedical Signal Processing and Computer Vision(BSPCV)</h3>
+        <p>IEEE Computer Society, PDEU</p>
+        <h3>IoT with Machine Learning and Hackathon</h3>
+        <p>IEEE Computer Society, PDEU</p>
+        <h3>Drone Boothcamp</h3>
+        <p>SOT, PDEU</p>
+    </div>
+</body>
+</html>
+    `;
+
+    // Activities Page Content
+    const activitiesContent = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-Curricular Activities</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #343a40;
+      }
+      .container {
+        padding: 20px;
+      }
+      h2 {
+        font-size: 2em;
+        color: #343a40;
+        border-bottom: 2px solid #343a40;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+      h3 {
+        font-size: 1.5em;
+        color: #343a40;
+        margin-top: 15px;
+      }
+      p {
+        color: #6c757d;
+        line-height: 1.6;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Co-Curricular Activities</h2>
+        <h3>Placement Cell Coordinator</h3>
+        <p>Pandit Deendayal Energy University</p>
+        <p>Gandhinagar, Gujarat</p>
+        <p>2024 - Present</p>
+        <p>Coordinated and facilitated internship drives, ensuring seamless execution.</p>
+        <p>Engaged with recruiters and students to streamline communication and internship opportunities</p>
+        <p>Assisted in data management, event scheduling, and logistics for internship activities.</p>
+        <p>Developed organizational, leadership, and networking skills through direct interaction with industry professionals.</p>
+
+        <h3>Social Media Core Committee Member for Geeks for Geeks</h3>
+        <p>October 2023 – April 2024</p>
+        <p>Worked on the Updation of the Social media and Event Management for various workshops conducted</p>
+        <p>Maintained all the socials including Instagram and LinkedIn</p>
+        <p>Developed organizational, leadership, and networking skills.</p>
+
+        <h3>Member at Medium(Student Club)</h3>
+        <p>Dec 2023 – April 2023</p>
+        <p>Interviewed in a Podcast Event</p>
+        <p>Worked for the Content and Documentation Department of the club.</p>
+    </div>
+</body>
+</html>
+    `;
+
+    function loadContent(page) {
+        let content = '';
+        switch (page) {
+            case 'home.html':
+                content = homeContent;
+                break;
+            case 'education.html':
+                content = educationContent;
+                break;
+            case 'projects.html':
+                content = projectsContent;
+                break;
+            case 'experience.html':
+                content = experienceContent;
+                break;
+            case 'skills.html':
+                content = skillsContent;
+                break;
+            case 'certifications.html':
+                content = certificationsContent;
+                break;
+            case 'activities.html':
+                content = activitiesContent;
+                break;
+            default:
+                content = '<p>Page not found.</p>';
+        }
+        document.querySelector('iframe').srcdoc = content;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('#nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                loadContent(this.getAttribute('href'));
+            });
+        });
+
+        // Load home page initially
+        loadContent('home.html');
+    });
+</script>
+
+</body>
+</html>
